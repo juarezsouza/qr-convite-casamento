@@ -1,0 +1,48 @@
+/* Configurações Gerais */
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  text-align: center; 
+  padding: 40px 20px; 
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #5d5d5d;
+}
+
+/* Container Flexbox para alinhar lado a lado */
+.flex-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Alinha verticalmente */
+  gap: 40px;               /* Espaço entre os cartões */
+  flex-wrap: wrap;         /* Quebra linha em telas pequenas (celular) */
+}
+
+/* Estilização dos "Cards" onde ficam os QRs */
+.qr-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra suave */
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de leve flutuação ao passar o mouse */
+.qr-item:hover {
+  transform: translateY(-5px);
+}
+
+h2 { 
+  font-size: 1.1rem; 
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Garante que o QR Code gerado fique centralizado dentro do card */
+#qrcode_local canvas, #qrcode_presentes canvas,
+#qrcode_local img, #qrcode_presentes img {
+  margin: 0 auto;
+}

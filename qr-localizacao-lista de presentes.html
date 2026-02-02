@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite: Ana e Juarez</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+
+  <h1>Ana & Juarez 🥂</h1>
+
+  <div class="flex-container">
+    
+    <div class="qr-item">
+      <h2>📍 Local da festa</h2>
+      <div id="qrcode_local"></div>
+    </div>
+
+    <div class="qr-item">
+      <h2>🎁 Lista de Presentes</h2>
+      <div id="qrcode_presentes"></div>
+    </div>
+
+  </div>
+
+  <script>
+    window.onload = function () {
+      new QRCode(document.getElementById("qrcode_local"), {
+        text: "https://goo.gl/maps/SEU_LINK_AQUI", 
+        width: 200,
+        height: 200
+      });
+
+      new QRCode(document.getElementById("qrcode_presentes"), {
+        text: "https://sites.icasei.com.br/anaejuarez/home",
+        width: 200,
+        height: 200
+      });
+    }
+  </script>
+
+</body>
+</html>
