@@ -1,1 +1,1 @@
-﻿# qr-convite-casamento para redirecionar ao local da festa e site do presente
+﻿# qr-convite-casamento para redirecionar ao local da festa e site do presente..
